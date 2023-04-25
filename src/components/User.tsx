@@ -6,7 +6,7 @@ const User: React.FC = () => {
         <div className="userContainer">
             <h1 className="heading">{name}</h1>
             <p className="email">{email}</p>
-            <button className="btn" onClick={handleRefresh}>
+            <button className="btn" onClick={handleRefresh} disabled={loading}>
                 {loading ? "fetching..." : "Refresh"}
             </button>
         </div>
